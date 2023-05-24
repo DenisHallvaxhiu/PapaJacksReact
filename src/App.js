@@ -1,9 +1,12 @@
 import './App.css';
+import Header from "./Components/Header/Header.jsx"
 
 function App() {
   return (
     <div className="App">
-        <div></div>
+      <Header/>
+      <main></main>
+      <footer></footer>
     </div>
   );
 }
