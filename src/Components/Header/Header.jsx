@@ -3,15 +3,26 @@ import PapaJacksLogo from "../../assets/Papajacks-logo.png";
 
 function Header() {
   return (
-    <nav >
-      <ul className="nav">
+    <nav className="nav">
+      <div>
+        <a className="logo" href="#">
+          {" "}
+          <img  src={PapaJacksLogo} alt="" />
+        </a>
+      </div>
+      <ul className="list">
         <li>
-          <img src={PapaJacksLogo} alt="" />
+          <a href="/">HOME</a>
         </li>
-        <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
+        <li>
+          <a href="/">ABOUT US</a>
+        </li>
+        <li>
+          <a href="/">MENU</a>
+        </li>
+        <li>
+          <a href="/">CONTACT</a>
+        </li>
       </ul>
     </nav>
   );
