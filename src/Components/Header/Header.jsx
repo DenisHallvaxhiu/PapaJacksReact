@@ -14,7 +14,7 @@ function Header() {
         <li>
           <a href="/">HOME</a>
         </li>
-        <li>
+        {/* <li>
           <a href="/">ABOUT US</a>
         </li>
         <li>
@@ -22,7 +22,7 @@ function Header() {
         </li>
         <li>
           <a href="/">CONTACT</a>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

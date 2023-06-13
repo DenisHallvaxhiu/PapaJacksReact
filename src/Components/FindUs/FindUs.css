@@ -7,6 +7,7 @@
     color: white;
     padding: 0 5%;
     gap: 5%;
+    padding-bottom: 3%;
 }
 
 .findUs > h1{
@@ -67,6 +68,7 @@
         width: 100%;
         flex: 1 1 100%;
     }
+
     .findUs > h1::after{
         width: 30%;
     }
@@ -76,13 +78,24 @@
         text-align: center;
     }
     .location > h4{
+        font-size: 2rem;
         margin: 0.8rem 0;
+    }
+    .location > p{
+        font-size: 1.8rem;
     }
 }
 
 @media screen and (max-width:800px){
     .findUs > h1::after{
         width: 40%;
+    }
+    .location > h4{
+        font-size: 1.8rem;
+        margin: 0.8rem 0;
+    }
+    .location > p{
+        font-size: 1.5rem;
     }
 
 }

@@ -1,0 +1,71 @@
+.mainFooter {
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1)), url('../../assets/wood-background.jpg');
+    color: white;
+}
+.footer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95%;
+
+}
+.footer .container{
+    position: absolute;
+    bottom: 350px;
+    width: 100%;
+    text-align: center;
+}
+.container .pizzabg{
+    width: 600px;
+    filter: brightness(60%);
+}
+
+.context > h1{
+    position: relative;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 4.5rem;
+    margin-top: 100px;
+    z-index: 100;
+}
+.context > ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+}
+.context > ul > li:hover{
+    cursor: pointer;
+}
+.context li > i {
+    font-size: 2.5rem;
+}
+.disclaimer > h5{
+    margin: 0;
+    font-size: 1rem;
+}
+@media screen and (max-width:1000px){
+
+    .context > h1{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width:800px){
+
+    .container .pizzabg{
+        width: 75%;
+        filter: brightness(60%);
+    }
+    .context > h1{
+        font-size: 3rem;
+    }
+    .context li > i {
+        font-size: 2rem;
+    }
+}

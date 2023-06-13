@@ -39,6 +39,7 @@ h3 {
 @media screen and (max-width:1000px){
     .mainLanding h1{
         font-size: 4rem;
+        margin-top: 20px;
     }
     h3{
         font-size: 2rem;
@@ -65,10 +66,8 @@ h3 {
 }
 
 @media screen and (max-width:600px){
-    .mainLanding h1{
-        font-size: 2rem;
+    .mainLanding > div{
+        margin: 0 auto;
     }
-    h3{
-        font-size: 1rem;
-    }
+
 }
