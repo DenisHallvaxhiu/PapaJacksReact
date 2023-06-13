@@ -1,0 +1,88 @@
+.findUs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: black;
+    color: white;
+    padding: 0 5%;
+    gap: 5%;
+}
+
+.findUs > h1{
+    margin: 0;
+    padding: 30px 5px;
+    font-size: 3rem;
+    font-family: 'Quattrocento', serif;
+}
+.findUs > h1::after{
+    content: "";
+    display: block;
+    width: 20%;
+    border-bottom: 4px solid #F2C94C;
+    margin: 0 auto;
+}
+
+.findUs > h1{
+    flex: 1 1 100%;
+    order: 1;
+}
+
+.findUs > div{
+    flex: 1;
+    order: 2;
+}
+
+.map{
+    text-align: end;
+}
+.map iframe {
+    width: 90%;
+    height: 400px;
+}
+.location{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.location > h4{
+    font-size: 2rem;
+}
+.location  p , .location  a {
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+.location > a {
+    text-decoration: underline;
+    color: inherit;
+}
+
+@media screen and (max-width:1000px){
+    .findUs {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .findUs > * {
+        width: 100%;
+        flex: 1 1 100%;
+    }
+    .findUs > h1::after{
+        width: 30%;
+    }
+    .findUs > .map{
+        order: 3;
+        margin-top: 5%;
+        text-align: center;
+    }
+    .location > h4{
+        margin: 0.8rem 0;
+    }
+}
+
+@media screen and (max-width:800px){
+    .findUs > h1::after{
+        width: 40%;
+    }
+
+}

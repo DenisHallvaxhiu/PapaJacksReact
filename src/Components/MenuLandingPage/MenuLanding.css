@@ -2,3 +2,84 @@
     background-color: black;
     color: white;
 }
+
+.menu > h1{
+    margin: 0;
+    padding: 30px 5px;
+    font-size: 3rem;
+    font-family: 'Quattrocento', serif;
+}
+.menu > h1::after{
+    content: "";
+    display: block;
+    width: 20%;
+    border-bottom: 4px solid #F2C94C;
+    margin: 0 auto;
+}
+
+.menu > span{
+    font-size: 1.5rem;
+    width: 65%;
+    display: inline-block;
+    padding-bottom: 30px;
+    background-color: black;
+}
+.menu > .pictures{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.pictures > div{
+    flex: 1;
+}
+
+.pictures > div > img{
+    width: 80%;
+    aspect-ratio: 2/1;
+    border-radius: 10px;
+}
+.menu > button {
+    margin: 20px;
+    padding: 20px 40px;
+    background: inherit;
+    color: #F2C94C;
+    font-size: 1.2rem;
+    border: 2px #F2C94C solid;
+}
+.menu > button:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px){
+    .menu > div{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .pictures > div > img{
+        width: 80%;
+        height: 400px;
+    }
+    .menu > h1::after{
+        width: 30%;
+    }
+}
+
+
+@media screen and (max-width:800px){
+    .menu > span{
+        font-size: 1.2rem;
+    }
+    .pictures > div > img{
+        height: 275px;
+    }
+    .menu > h1::after{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:600px){
+
+}

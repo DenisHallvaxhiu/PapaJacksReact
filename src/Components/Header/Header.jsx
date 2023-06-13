@@ -5,7 +5,7 @@ function Header() {
   return (
     <nav className="nav">
       <div>
-        <a className="logo" href="#">
+        <a className="logo" href="http://localhost:3000/">
           {" "}
           <img  src={PapaJacksLogo} alt="" />
         </a>
