@@ -1,29 +1,10 @@
 import "./Header.css";
-import PapaJacksLogo from "../../assets/Papajacks-logo.png";
+// import PapaJacksLogo from "../../assets/Papajacks-logo.png";
 
-function Header() {
+function Header(props) {
   return (
-    <nav className="nav">
-      <div>
-        <a className="logo" href="http://localhost:3000/">
-          {" "}
-          <img  src={PapaJacksLogo} alt="" />
-        </a>
-      </div>
-      <ul className="list">
-        <li>
-          <a href="/">HOME</a>
-        </li>
-        {/* <li>
-          <a href="/">ABOUT US</a>
-        </li>
-        <li>
-          <a href="/">MENU</a>
-        </li>
-        <li>
-          <a href="/">CONTACT</a>
-        </li> */}
-      </ul>
+    <nav className="navbar">
+      <ul className="navbar-nav">{props.children}</ul>
     </nav>
   );
 }

@@ -1,31 +1,12 @@
-.nav{
-    padding: 0 15px;
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-}
-
-.nav .logo{
-    display: block;
-    width: 130px;
+.navbar {
     height: 70px;
-    padding: 10px;
+    background-color: black;
+    padding: 0 1rem;
+    border-bottom: 1px solid black;
 }
-.logo img {
-    width: 100%;
+.navbar-nav{
+    max-width: 100%;
     height: 100%;
-}
-.list {
     display: flex;
-    width: 500px;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-}
-.list a{
-    text-decoration: none;
-    color: #ffffff;
-}
-.list a:hover{
-    color: #dadada;
+    justify-content: flex-end;
 }
