@@ -1,14 +1,15 @@
 import "./Header.css";
+import { Link } from "react-router-dom";
 // import PapaJacksLogo from "../../assets/Papajacks-logo.png";
 
 function Header(props) {
   return (
     <nav className="navbar">
       <ul className="navbar-nav">
-        <li><a href="/booking">Booking</a></li>
-        <li><a href="#1">#</a></li>
-        <li><a href="#1">#</a></li>
-        <li><a href="#1">#</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/booking">Booking</Link></li>
+        <li><Link to="#1">#</Link></li>
+        <li><Link to="#1">#</Link></li>
       </ul>
     </nav>
   );

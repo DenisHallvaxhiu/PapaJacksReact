@@ -1,12 +1,12 @@
 import Main from "../Components/Main";
 import Footer from "../Components/Footer/Footer";
-import React from 'react'
+import React from "react";
 
 export default function Home() {
   return (
-    <body>
-        <Main/>
-        <Footer/>
-    </body>
-  )
+    <>
+      <Main />
+      <Footer />
+    </>
+  );
 }
