@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./BookingForm.css";
 
+
 // Seeded random function
 const seededRandom = (seed) => {
   const m = 2 ** 35 - 31;
@@ -24,6 +25,9 @@ const fetchAPI = (date) => {
 };
 
 export default function Booking() {
+
+
+
   const [availableTimes, setAvailableTimes] = useState([
     "10:00 AM",
     "12:00 PM",
@@ -95,9 +99,10 @@ export default function Booking() {
         <div>
           <label htmlFor="occasion">Occasion</label>
           <select id="occasion">
-            <option>Birthday</option>
-            <option>Anniversary</option>
-            <option>Other</option>
+            <option>Select Occasion</option>
+            <option value="Birthday">Birthday</option>
+            <option value="Anniversary">Anniversary</option>
+            <option value="Other">Other</option>
           </select>
         </div>
         <input
