@@ -9,4 +9,19 @@
     height: 100%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+    color: white;
+    list-style-type: none
+}
+
+.navbar-nav > li > a {
+    font-size: 22px;
+    color: white;
+
+}
+.navbar-nav > li > a:hover {
+    font-size: 22px;
+    color: darkblue;
 }
